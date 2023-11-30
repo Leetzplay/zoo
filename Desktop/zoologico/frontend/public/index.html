@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="Logo Zoológico Moderno Verde.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+          name="description"
+          content="Web site created using create-react-app"
+  />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+    manifest.json provides metadata used when your web app is installed on a
+    user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+  -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+    Notice the use of %PUBLIC_URL% in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+
+    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
+  -->
+  <title>Zoológico Terra Selvagem</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+</head>
+<body>
+
+<h1><center><img src="Logo Zoológico Moderno Verde.png" alt="Image" height="200" width="200"/></center></h1>
+
+<!-- Formulário para Animal -->
+<font color="#FFFFFF">
+<form action="/cadastrarAnimal" method="post">
+  <h2>Cadastrar Animal</h2>
+  <label for="nomeAnimal">Nome:</label>
+  <input type="text" id="nomeAnimal" name="nomeAnimal" required>
+  <label for="especieAnimal">Espécie:</label>
+  <input type="text" id="especieAnimal" name="especieAnimal" required>
+  <label for="idadeAnimal">Idade:</label>
+  <input type="number" id="idadeAnimal" name="idadeAnimal" required>
+  <label for="vacinaAnimal">Possui Carteira de Vacinação:</label>
+  <select id="vacinaAnimal" name="vacinaAnimal">
+  <option value="true">Sim</option>
+  <option value="false">Não</option>
+  </select>
+  <center><button type="submit">Cadastrar Animal</button></center>
+</form>
+</font>
+
+<!-- Formulário para Produto -->
+<font color="#FFFFFF">
+<form action="/cadastrarProduto" method="post">
+  <h2>Cadastrar Produto</h2>
+  <label for="idProduto">ID:</label>
+  <input type="number" id="idProduto" name="idProduto" required>
+  <label for="precoProduto">Preço:</label>
+  <input type="number" id="precoProduto" name="precoProduto" required>
+  <label for="Produto">Qual o tipo de produto?:</label>
+  <select id="Produto" name="Produto">
+    <option value="true">Brinquedo</option>
+    <option value="false">Lanche</option>
+  </select>
+  <center><button type="submit">Cadastrar Produto</button></center>
+</form>
+</font>
+
+<!-- Formulário para Funcionario -->
+<font color="#FFFFFF">
+<form action="/cadastrarFuncionario" method="post">
+  <h2>Cadastrar Funcionário</h2>
+  <label for="idFuncionario">ID:</label>
+  <input type="number" id="idFuncionario" name="idFuncionario" required>
+  <label for="nomeFuncionario">Nome:</label>
+  <input type="text" id="nomeFuncionario" name="nomeFuncionario" required>
+  <label for="cargoFuncionario">Cargo:</label>
+  <input type="text" id="cargoFuncionario" name="cargoFuncionario" required>
+  <label for="salarioFuncionario">Salário:</label>
+  <input type="number" id="salarioFuncionario" name="salarioFuncionario" required>
+  <label for="turnoFuncionario">Turno de Trabalho:</label>
+  <input type="text" id="turnoFuncionario" name="turnoFuncionario" required>
+  <label for="cpfFuncionario">CPF:</label>
+  <input type="text" id="cpfFuncionario" name="cpfFuncionario" required>
+  <center><button type="submit">Cadastrar Funcionário</button></center>
+</form>
+</font>
+
+<!-- Formulário para Visitante -->
+<font color="#FFFFFF">
+<form action="/cadastrarVisitante" method="post">
+  <h2>Cadastrar Visitante</h2>
+  <label for="idVisitante">ID:</label>
+  <input type="number" id="idVisitante" name="idVisitante" required>
+  <label for="nomeVisitante">Nome:</label>
+  <input type="text" id="nomeVisitante" name="nomeVisitante" required>
+  <label for="idadeVisitante">Idade:</label>
+  <input type="number" id="idadeVisitante" name="idadeVisitante" required>
+  <label for="tipoIngresso">Tipo de Ingresso:</label>
+  <input type="text" id="tipoIngresso" name="tipoIngresso" required>
+  <label for="possuiGuia">Possui Guia:</label>
+  <select id="possuiGuia" name="possuiGuia">
+  <option value="true">Sim</option>
+  <option value="false">Não</option>
+  </select>
+  <label for="possuiMapa">Possui Mapa:</label>
+    <select id="possuiMapa"  name="possuiMapa">
+      <option value="true">Sim</option>
+      <option value="false">Não</option>
+    </select>
+
+  <center><button type="submit">Cadastrar Visitante</button></center>
+</form>
+</font>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
+
